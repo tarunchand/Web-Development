@@ -7,48 +7,230 @@
 </head>
 
 <body>
-  <!--Horizontal line-->
+  <hr>
+  <h1>
+    <center>HTML</center>
+  </h1>
   <hr>
 
-  <!--Headings-->
+  <!------------------------------------------------------------------------>
+  <!-- 
+    Headings 
+  -->
+  <h2>Headings</h2>
   <h1>Page Title - Level 1 Heading</h1>
   <h2>Section Title - Level 2 Heading</h2>
   <h3>Sub-section Title - Level 3 Heading</h3>
   <hr>
 
-  <!--Paragraph-->
-  <p title="Sample Paragraph">This is a sample paragraph.</p>
+
+  <!------------------------------------------------------------------------>
+  <!-- 
+    Text Elements 
+  -->
+  <h2>Text Elements</h2>
+
+  <h3>Paragraph</h3> <!-- Paragraph -->
+  <section>
+    <p title="Sample Paragraph">This is a sample paragraph.</p>
+  </section>
   <hr>
 
-  <!--Line Break-->
-  <p>
-    First Line.
-    <br>
-    Second Line.
-  </p>
+  <h3>Line Break</h3> <!-- Line Break -->
+  <section>
+    <p>
+      First Line.
+      <br>
+      Second Line.
+    </p>
+  </section>
   <hr>
 
-  <!--Spaces-->
-  <p>
-    Word-1 &nbsp; &nbsp; &nbsp; : &nbsp; &nbsp; &nbsp; Word-2
-  </p>
+  <h3>Horizontal line</h3> <!-- Horizontal line -->
+  <section>
+    <hr>
+  </section>
   <hr>
 
-  <!--Preformatted text-->
-  <pre>
+  <h3>Spaces</h3> <!-- Spaces -->
+  <section>
+    <p>
+      Word-1 &nbsp; &nbsp; &nbsp; : &nbsp; &nbsp; &nbsp; Word-2
+    </p>
+  </section>
+  <hr>
+
+  <h3>Preformatted text</h3> <!-- Preformatted text -->
+  <section>
+    <pre>
     The following pre-formatted text preserves spaces and line breaks.
     Examples:
       1) Space
       2) Line Break 
-  </pre>
+    </pre>
+  </section>
   <hr>
 
-  <!--Links-->
-  <a href="http://127.0.0.1:5500/">Visit localhost</a>
+  <h3>Text Formatting</h3> <!-- Text Formatting -->
+  <section>
+    <p><i>This text is italic.</i></p>
+    <p><em>This text is emphasized. A screen reader will pronounce the words with an emphasis, using verbal stress.</em>
+    </p>
+    <p><b>This text is bold.</b></p>
+    <p><b>This text is strong.</b></p>
+    <p>This is<sub> subscript</sub> and <sup>superscript</sup>.</p>
+    <p><small>This text is small.</small></p>
+    <p><mark>This text is marked or highlighted.</mark></p>
+    <p><del>This text is struck out.</del></p>
+    <p><ins>This text is underlined.</ins></p>
+  </section>
   <hr>
 
-  <!--Image-->
-  <img src="/assets/images/my_image.jpeg" width="545" height="545" alt="Tarun Chand Koganti">
+  <h3>Bi-Directional Override</h3> <!-- Bi-Directional Override: To override the current text direction -->
+  <section>
+    <bdo dir="rtl">This text will be written from right to left</bdo>
+  </section>
+  <hr>
+
+  <h3>Blockquote</h3> <!-- Blockquote -->
+  <section>
+    <p>Here is a quote from ____'s website:</p>
+    <blockquote cite="https://www.____.org/about/">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+      magna
+      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.
+    </blockquote>
+  </section>
+  <hr>
+
+  <h3>Short Quotation</h3> <!-- Short Quotation -->
+  <section>
+    <p>___ mission is to: <q>Build a future where people live in harmony with nature.</q></p>
+  </section>
+  <hr>
+
+  <h3>Abbreviation</h3> <!-- Abbreviation -->
+  <section>
+    <p>The abbrevation <abbr title="Koganti Tarun Chand">KTC</abbr> means ___________. </p>
+  </section>
+  <hr>
+
+  <h3>Citation</h3> <!-- Citation -->
+  <section>
+    <p>
+    <blockquote cite="_________">You have a right to perform your prescribed duty, but you are not entitled to the
+      fruits
+      of action. Never consider yourself the cause of the results of your activities, and never be attached to not doing
+      your duty.</blockquote>
+    <cite>The Bhagavad Gita</cite>
+    </p>
+  </section>
+  <hr>
+
+  <h3>Address</h3> <!-- Address -->
+  <section>
+    <p>
+      Please find my address below:
+    <address>
+      XXXX<br>
+      XXXXXXXXXX<br>
+      Andhra Pradesh<br>
+      India
+    </address>
+  </section>
+  </p>
+  <hr>
+
+  <h3>Unordered HTML List</h3> <!-- Unordered HTML List -->
+  <section>
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+  </section>
+  <hr>
+
+  <h3>Ordered HTML List</h3> <!-- Ordered HTML List -->
+  <section>
+    <ol>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+  </section>
+  <hr>
+
+  <h3>Description List</h3> <!-- Description List -->
+  <section>
+    <dl>
+      <dt>Coffee:</dt>
+      <dd>black hot drink</dd>
+      <dt>Milk:</dt>
+      <dd>white cold drink</dd>
+    </dl>
+  </section>
+  <hr>
+
+
+  <!------------------------------------------------------------------------>
+  <!--
+    Style (Inline CSS)
+    <tagname style="property:value">
+  -->
+  <h2>Style (Inline CSS)</h2>
+
+  <h3>Styled Paragraph</h3> <!-- Styled Paragraph -->
+  <section>
+    <p style="
+  color:green;
+  text-align:center;
+  background-color:pink;
+  font-family:courier;
+  font-size:150%;
+  border:10px ridge rgba(6, 159, 247, 0.473);
+  ">
+      This is a styled paragraph.
+    </p>
+  </section>
+  <hr>
+
+  <h3>Margin</h3> <!-- Margin -->
+  <section>
+    <p style="
+  border:10px solid hsla(113, 92%, 51%, 0.925);
+  margin: 50px;
+  ">
+      This is first line of another styled paragraph with margin.<br>
+      This is second line of another styled paragraph with margin.
+    </p>
+  </section>
+  <hr>
+
+  <h3>Padding</h3> <!-- Padding -->
+  <section>
+    <p style="
+  border:10px solid hsla(330, 92%, 51%, 0.925);
+  padding: 50px;
+  ">
+      This is first line of another styled paragraph with padding.<br>
+      This is second line of another styled paragraph with padding.
+    </p>
+  </section>
+  <hr>
+
+
+  <!------------------------------------------------------------------------>
+  <!--
+    Media
+  -->
+  <h2>Media</h2>
+
+  <h3>Image</h3> <!-- Image -->
+  <section>
+    <img src="/assets/images/my_image.jpeg" width="545" height="545" alt="Tarun Chand Koganti">
+  </section>
   <hr>
   <!--
     or
@@ -58,95 +240,59 @@
 
     Width and Height are specified in pixels.
   -->
-  <!--Image alt-->
-  <img src="does_not_exist.jpeg" alt="Tarun Chand Koganti">
+
+  <h3>Image alt</h3> <!-- Image alt -->
+  <section>
+    <img src="does_not_exist.jpeg" alt="Tarun Chand Koganti">
+  </section>
   <hr>
 
+
+  <!------------------------------------------------------------------------>
   <!--
-    Style (Inline CSS)
-    <tagname style="property:value">
+    Links and iFrames
   -->
-  <p style="
-  color:green;
-  text-align:center;
-  background-color:pink;
-  font-family:courier;
-  font-size:150%;
-  border:10px ridge rgba(6, 159, 247, 0.473);
-  ">
-    This is a styled paragraph.
-  </p>
-  <hr>
-  <p style="
-  border:10px solid hsla(113, 92%, 51%, 0.925);
-  margin: 50px;
-  ">
-    This is first line of another styled paragraph with margin.<br>
-    This is second line of another styled paragraph with margin.
-  </p>
-  <hr>
-  <p style="
-  border:10px solid hsla(330, 92%, 51%, 0.925);
-  padding: 50px;
-  ">
-    This is first line of another styled paragraph with padding.<br>
-    This is second line of another styled paragraph with padding.
-  </p>
+  <h2>Links and iFrames</h2>
+
+  <h3>Link</h3> <!-- Link -->
+  <section>
+    <a href="http://127.0.0.1:5500/">Visit localhost</a>
+  </section>
   <hr>
 
-  <!--Text Formatting-->
-  <p><b>This text is bold.</b></p>
-  <p><b>This text is strong.</b></p>
-  <p><i>This text is italic.</i></p>
-  <p><em>This text is emphasized. A screen reader will pronounce the words with an emphasis, using verbal stress.</em>
-  </p>
-  <p>This is<sub> subscript</sub> and <sup>superscript</sup>.</p>
-  <p><small>This text is small.</small></p>
-  <p><mark>This text is marked or highlighted.</mark></p>
-  <p><del>This text is struck out.</del></p>
-  <p><ins>This text is underlined.</ins></p>
+  <h3>Iframe</h3> <!-- Iframe -->
+  <section>
+    <iframe src="http://127.0.0.1:5500/" width="800" height="400" title="Localhost"></iframe>
+  </section>
   <hr>
 
-  <!--Blockquote-->
-  <p>Here is a quote from ____'s website:</p>
-  <blockquote cite="https://www.____.org/about/">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  </blockquote>
+  <h3>Iframe with srcdoc attribute</h3> <!-- Iframe with srcdoc attribute -->
+  <section>
+    <iframe width="200" height="100"
+      srcdoc="<h1>Internal Content in Iframe</h1><p>This is rendered from the srcdoc attribute.</p>"
+      title="Internal Code Sample">
+    </iframe>
+  </section>
   <hr>
 
-  <!--Short Quotation-->
-  <p>___ mission is to: <q>Build a future where people live in harmony with nature.</q></p>
+  <h3>Iframe as a Link Target</h3> <!-- Iframe as a Link Target -->
+  <section>
+    <iframe src="iframe_demo.html" name="my-iframe" width="800" height="400"></iframe>
+    <ul>
+      <li><a href="http://127.0.0.1:5500/" target="my-iframe">Click to Load Localhost in the above Iframe</a></li>
+      <li><a href="index.html" target="my-iframe">Click to Load Current Page in the above Iframe</a></li>
+      <li><a href="iframe_demo.html" target="my-iframe">Click to Load the original Iframe Page in the above Iframe</a>
+      </li>
+    </ul>
+  </section>
   <hr>
 
-  <!--Abbreviation-->
-  <p>The abbrevation <abbr title="Koganti Tarun Chand">KTC</abbr> means ___________. </p>
+  <!---->
+  <a href="security_demo/malicious.html" target="_blank">
+    Click me (unsafe)
+  </a>
   <hr>
 
-  <!--Cite-->
-  <p>
-  <blockquote cite="_________">You have a right to perform your prescribed duty, but you are not entitled to the fruits
-    of action. Never consider yourself the cause of the results of your activities, and never be attached to not doing
-    your duty.</blockquote>
-  <cite>The Bhagavad Gita</cite>
-  </p>
-  <hr>
-
-  <!--Bi-Directional Override: To override the current text direction-->
-  <bdo dir="rtl">This text will be written from right to left</bdo>
-  <hr>
-
-  <!--Address-->
-  <p>
-    Please find my address below:
-  <address>
-    XXXX<br>
-    XXXXXXXXXX<br>
-    Andhra Pradesh<br>
-    India
-  </address>
-  </p>
-  <hr>
 
 </body>
 
