@@ -202,7 +202,8 @@
   border:10px solid hsla(113, 92%, 51%, 0.925);
   margin: 50px;
   ">
-      This is first line of another styled paragraph with margin.<br>
+      This is first line of another styled paragraph with margin.
+      <br>
       This is second line of another styled paragraph with margin.
     </p>
   </section>
@@ -214,7 +215,8 @@
   border:10px solid hsla(330, 92%, 51%, 0.925);
   padding: 50px;
   ">
-      This is first line of another styled paragraph with padding.<br>
+      This is first line of another styled paragraph with padding.
+      <br>
       This is second line of another styled paragraph with padding.
     </p>
   </section>
@@ -287,12 +289,85 @@
   </section>
   <hr>
 
-  <!---->
-  <a href="security_demo/malicious.html" target="_blank">
-    Click me (unsafe)
-  </a>
+  <h3>Link: target = '_self'</h3> <!-- Link: target = '_self' -->
+  <section>
+    <p>
+      Opens link in the same tab/window - default behavior. E.g.
+      <a href="http://127.0.0.1:5500/">Click Me</a>
+    </p>
+  </section>
   <hr>
 
+  <h3>Link: target = '_blank'</h3> <!-- Link: target = '_blank' -->
+  <section>
+    <p>
+      Opens link in a new tab/window. E.g.
+      <a href="http://127.0.0.1:5500/" target="_blank" rel="noopener noreferrer">Click Me</a>
+    <pre>
+          Best practice (security): Always use rel="noopener noreferrer" when linking external links.
+          noopener: This prevents the new page from controlling your page (prevents accessing <b>window.opener</b>).
+          noreferrer: Hides the referrer information. The destination site cannot see where the user came from.
+
+          Below example demonstrates how a malicious page can redirect the original page using <b>window.opener</b> when the <b>rel="noopener"</b> attribute is not set.
+          (Since, most browsers now a days, add the noopener attribute automatically as part of security, we are explicitly setting rel="opener" to disable the browser's security control for the sake of demonstrating this example.) 
+    </pre>
+    Malicious Website :
+    <a href="security_demo/malicious.html" target="_blank" rel="opener">
+      Click me (unsafe)
+    </a>
+    </p>
+  </section>
+  <hr>
+
+  <h3>Link: target = '_parent'</h3> <!-- Link: target = '_parent' -->
+  <section>
+    <p>
+      Opens link in the parent frame. Only relevant when using iframes. Goes one level up from the child iFrame.
+      <br>
+      E.g.
+      <br>
+      <iframe width="400" height="200" srcdoc="
+      <h1>Child iFrame (Parent=Main Browser Window)</h1>
+      <a href='http://127.0.0.1:5500/' target='_parent'>Click Me</a>
+      "></iframe>
+    </p>
+  </section>
+  <hr>
+
+  <h3>Link: target = '_top'</h3> <!-- Link: target = '_top' -->
+  <section>
+    <p>
+      Opens link in the full browser window. Breaks out of all frames/iFrames.
+      <br>
+      E.g.
+      <br>
+      <iframe width="400" height="200" srcdoc="
+      <h1>Child iFrame (Parent=Main Browser Window)</h1>
+      <a href='http://127.0.0.1:5500/' target='_top'>Click Me</a>
+      "></iframe>
+    </p>
+  </section>
+  <hr>
+
+  <h3>Link: target = '_parent' vs target = '_top' </h3> <!-- Link: target = '_parent' vs target = '_top' -->
+  <section>
+    <iframe width="800" height="400" srcdoc="
+      <h1>Child-1 iFrame (Parent=Main Browser Window)</h1>
+      <iframe width='600' height='300' srcdoc=&quot;
+          <h1>Child-1's child iFrame (Parent=Child-1 iFrame)</h1>
+          <p>
+            Parent : Goes one level up. Overrides Child-1 iFrame. E.g. 
+            <a href='http://127.0.0.1:5500/' target='_parent'>Click Me</a>
+            <br>
+            Top: Breaks out of all frames/iFrames. Goes to the top most level. Overrides the full browser window. E.g. 
+            <a href='http://127.0.0.1:5500/' target='_top'>Click Me</a>
+          </p>
+          &quot;>
+      </iframe>
+      ">
+    </iframe>
+  </section>
+  <hr>
 
 </body>
 
