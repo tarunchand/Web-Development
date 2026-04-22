@@ -128,7 +128,7 @@
   </section>
   <hr>
 
-  <h3>Address</h3> <!-- Address -->
+  <h3 id="addr">Address</h3> <!-- Address -->
   <section>
     <p>
       Please find my address below:
@@ -258,7 +258,39 @@
 
   <h3>Link</h3> <!-- Link -->
   <section>
-    <a href="http://127.0.0.1:5500/">Visit localhost</a>
+    <a href="http://127.0.0.1:5500/" title="Visit Localhost">Click Me</a>
+  </section>
+  <hr>
+
+  <h3>Image as a Link</h3> <!-- Image as a Link -->
+  <section>
+    <a href="http://127.0.0.1:5500/" title="Click on the below image to visit localhost">
+      <img src="/assets/images/my_image.jpeg" width="50" height="50" alt="Tarun Chand Koganti">
+    </a>
+  </section>
+  <hr>
+
+  <h3>Link to an Email Address</h3> <!-- Link to an Email Address -->
+  <section>
+    <a href="mailto:tarunchand.koganti555@gmail.com" title="Opens the user's email program">Send email</a>
+  </section>
+  <hr>
+
+  <h3>Button as a Link</h3> <!-- Button as a Link -->
+  <section>
+    <button onclick="document.location='http://127.0.0.1:5500/'" title="Visit Localhost">Click Me</button>
+  </section>
+  <hr>
+
+  <h3>Link to a bookmark</h3> <!-- Link to a bookmark -->
+  <section>
+    <p>
+      Link to bookmark from within the same page: 
+      <a href="#addr">Jump to Address</a>
+      <br>
+      Link to bookmark on another page: 
+      <a href="iframe_demo.html#SL10">Jump to Sample list 10</a>
+    </p>
   </section>
   <hr>
 
