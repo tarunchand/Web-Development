@@ -107,7 +107,7 @@
 
     <h3>Citation</h3>
     <section>
-      <blockquote cite="">
+      <blockquote cite="____">
         You have a right to perform your prescribed duty, but you are not
         entitled to the fruits of action. Never consider yourself the cause of
         the results of your activities, and never be attached to not doing your
@@ -135,9 +135,6 @@
         Andhra Pradesh<br />
         India
       </address>
-      <pre>
-        We cannot use the address element inside the paragraph element.
-      </pre>
     </section>
     <hr />
 
@@ -262,6 +259,81 @@
         The image will float to the left of the text.
       </p>
       <br />
+    </section>
+    <hr />
+
+    <h3>Image Map</h3>
+    <section>
+      <p>Clickabale areas for the below image:- Eyes, Nose, Mouth and Hair.</p>
+      <img
+        src="/assets/images/my_image.jpeg"
+        alt="Tarun Chand Koganti"
+        usemap="#myimagemap"
+      />
+      <map name="myimagemap">
+        <area
+          shape="rect"
+          coords="206,165,243,181"
+          alt="Tarun's left eye"
+          title="Left eye"
+          href="iframe_demo.html#eyes"
+        />
+        <area
+          shape="rect"
+          coords="282,157,316,174"
+          alt="Tarun's right eye"
+          title="Right eye"
+          href="iframe_demo.html#eyes"
+        />
+        <area
+          shape="circle"
+          coords="267,202,28"
+          alt="Tarun's nose"
+          title="Nose"
+          href="iframe_demo.html#nose"
+        />
+        <area
+          shape="circle"
+          coords="267,253,23"
+          alt="Tarun's mouth"
+          title="Mouth"
+          href="iframe_demo.html#mouth"
+        />
+        <area
+          shape="poly"
+          coords="172,51,157,69,155,82,146,91,144,110,144,124,150,144,153,162,
+          184,205,185,39,189,114,200,105,209,99,219,91,236,90,253,86,273,82,301,
+          92,312,111,313,105,321,108,321,122,331,120,337,112,341,126,343,106,
+          190,32,199,28,209,27,228,18,249,15,285,24,306,34,327,52,338,65,346,81,
+          353,97,356,119,356,151,339,142,340,157,347,177,286,83,288,69,289,77,
+          175,44,192,39,201,46,225,50"
+          alt="Tarun's hair"
+          title="Hair"
+          href="#"
+          onclick="imageMapFunction()"
+        />
+      </map>
+      <script>
+        function imageMapFunction() {
+          alert("You've clicked on the hair!");
+        }
+      </script>
+    </section>
+    <hr />
+
+    <h3>Common Image Formats</h3>
+    <section>
+      <ul>
+        <li>APNG, Animated Portable Network Graphics, .apng GIF</li>
+        <li>GIF, Graphics Interchange Format, .gif</li>
+        <li>ICO, Microsoft Icon, .ico, .cur</li>
+        <li>
+          JPEG, Joint Photographic Expert Group Image, .jpg, .jpeg, .jfif,
+          .pjpeg, .pjp
+        </li>
+        <li>PNG, Portable Network Graphics, .png</li>
+        <li>SVG, Scalable Vector Graphics, .svg</li>
+      </ul>
     </section>
     <hr />
 
