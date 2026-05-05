@@ -321,6 +321,318 @@
     </section>
     <hr />
 
+    <h3>Background Image</h3>
+    <section>
+      <p>
+        A background image can be specified for almost any HTML element.
+        <br />
+        If we want the entire page to have a background image, we must specify
+        the background image on the body element.
+      </p>
+
+      <h4><b>Background image on a HTML element</b></h4>
+      <p>
+        If the background image is smaller than the element, the image will
+        repeat itself, horizontally and vertically, until it reaches the end of
+        the element. Below is an example of background image on a paragraph
+        element.
+      </p>
+      <p
+        style="
+          background-image: url('/assets/images/my_image.jpeg');
+          border: 2px ridge rgb(0, 0, 0);
+        "
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna
+        tortor, varius at finibus vel, maximus sit amet magna. Ut et metus sed
+        turpis tincidunt laoreet a ut dui. Nunc non laoreet odio, vitae
+        tristique est. Curabitur elementum blandit nunc ut accumsan. Phasellus
+        eu lorem sit amet quam elementum tincidunt ut eu lacus. Nullam mauris
+        ligula, pretium sit amet nisi a, eleifend viverra sem. Vestibulum eu
+        dignissim justo, vitae semper nibh. Maecenas gravida sapien at lacus
+        congue sagittis. Curabitur auctor turpis et placerat fringilla.
+        Suspendisse pellentesque tempus lectus vitae luctus. Pellentesque et
+        accumsan massa, id feugiat erat. Suspendisse potenti. Praesent cursus eu
+        tortor vel faucibus. Vestibulum ante ipsum primis in faucibus orci
+        luctus et ultrices posuere cubilia curae; Curabitur eget diam vulputate,
+        efficitur metus id, sollicitudin leo. Aenean viverra enim at tortor
+        suscipit pharetra sed non odio. Phasellus at diam efficitur diam auctor
+        pulvinar. Ut congue porttitor velit, et tempus nisi faucibus placerat.
+        Aenean vestibulum odio ac lectus ultricies, vitae dignissim lorem
+        bibendum. Integer consectetur quam a nisl dictum blandit. Suspendisse
+        potenti. Nulla non elit ultrices diam elementum dapibus. Nunc nibh nisl,
+        euismod quis metus a, placerat pulvinar eros. Suspendisse libero quam,
+        varius at consequat non, pretium mattis elit. Etiam mollis hendrerit
+        nisi, nec lobortis sapien finibus ut. Pellentesque consequat venenatis
+        ex, vitae tempus neque efficitur id. Quisque tincidunt eros libero, id
+        fringilla turpis sollicitudin a. Donec commodo, diam et hendrerit
+        iaculis, eros mi laoreet nisi, ut blandit justo risus ut libero. Nam
+        lacinia posuere felis, quis euismod urna elementum in. Proin sed turpis
+        nisi. Praesent nec nisi nisi. Phasellus ac nisl facilisis, pharetra sem
+        ac, imperdiet sem. Donec rutrum arcu sed leo volutpat bibendum. Mauris
+        tempus accumsan urna quis dictum. Proin pellentesque metus ut lacus
+        finibus semper. Quisque eget pulvinar lorem, sed placerat augue. Aliquam
+        erat volutpat. Nullam odio purus, euismod quis varius et, luctus vitae
+        ante. Praesent porttitor tristique dui sit amet sodales. Suspendisse
+        volutpat risus diam, vel faucibus turpis tincidunt quis. Curabitur
+        semper massa sed ullamcorper mollis.
+      </p>
+
+      <h4><b>Background Repeat: no-repeat</b></h4>
+      <p
+        style="
+          background-image: url('/assets/images/my_image.jpeg');
+          background-repeat: no-repeat;
+          border: 2px ridge rgb(0, 0, 0);
+        "
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna
+        tortor, varius at finibus vel, maximus sit amet magna. Ut et metus sed
+        turpis tincidunt laoreet a ut dui. Nunc non laoreet odio, vitae
+        tristique est. Curabitur elementum blandit nunc ut accumsan. Phasellus
+        eu lorem sit amet quam elementum tincidunt ut eu lacus. Nullam mauris
+        ligula, pretium sit amet nisi a, eleifend viverra sem. Vestibulum eu
+        dignissim justo, vitae semper nibh. Maecenas gravida sapien at lacus
+        congue sagittis. Curabitur auctor turpis et placerat fringilla.
+        Suspendisse pellentesque tempus lectus vitae luctus. Pellentesque et
+        accumsan massa, id feugiat erat. Suspendisse potenti. Praesent cursus eu
+        tortor vel faucibus. Vestibulum ante ipsum primis in faucibus orci
+        luctus et ultrices posuere cubilia curae; Curabitur eget diam vulputate,
+        efficitur metus id, sollicitudin leo. Aenean viverra enim at tortor
+        suscipit pharetra sed non odio. Phasellus at diam efficitur diam auctor
+        pulvinar. Ut congue porttitor velit, et tempus nisi faucibus placerat.
+        Aenean vestibulum odio ac lectus ultricies, vitae dignissim lorem
+        bibendum. Integer consectetur quam a nisl dictum blandit. Suspendisse
+        potenti. Nulla non elit ultrices diam elementum dapibus. Nunc nibh nisl,
+        euismod quis metus a, placerat pulvinar eros. Suspendisse libero quam,
+        varius at consequat non, pretium mattis elit. Etiam mollis hendrerit
+        nisi, nec lobortis sapien finibus ut. Pellentesque consequat venenatis
+        ex, vitae tempus neque efficitur id. Quisque tincidunt eros libero, id
+        fringilla turpis sollicitudin a. Donec commodo, diam et hendrerit
+        iaculis, eros mi laoreet nisi, ut blandit justo risus ut libero. Nam
+        lacinia posuere felis, quis euismod urna elementum in. Proin sed turpis
+        nisi. Praesent nec nisi nisi. Phasellus ac nisl facilisis, pharetra sem
+        ac, imperdiet sem. Donec rutrum arcu sed leo volutpat bibendum. Mauris
+        tempus accumsan urna quis dictum. Proin pellentesque metus ut lacus
+        finibus semper. Quisque eget pulvinar lorem, sed placerat augue. Aliquam
+        erat volutpat. Nullam odio purus, euismod quis varius et, luctus vitae
+        ante. Praesent porttitor tristique dui sit amet sodales. Suspendisse
+        volutpat risus diam, vel faucibus turpis tincidunt quis. Curabitur
+        semper massa sed ullamcorper mollis.
+      </p>
+
+      <h4><b>Background Size: cover</b></h4>
+      <p
+        style="
+          background-image: url('/assets/images/my_image.jpeg');
+          background-size: cover;
+          border: 2px ridge rgb(0, 0, 0);
+        "
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna
+        tortor, varius at finibus vel, maximus sit amet magna. Ut et metus sed
+        turpis tincidunt laoreet a ut dui. Nunc non laoreet odio, vitae
+        tristique est. Curabitur elementum blandit nunc ut accumsan. Phasellus
+        eu lorem sit amet quam elementum tincidunt ut eu lacus. Nullam mauris
+        ligula, pretium sit amet nisi a, eleifend viverra sem. Vestibulum eu
+        dignissim justo, vitae semper nibh. Maecenas gravida sapien at lacus
+        congue sagittis. Curabitur auctor turpis et placerat fringilla.
+        Suspendisse pellentesque tempus lectus vitae luctus. Pellentesque et
+        accumsan massa, id feugiat erat. Suspendisse potenti. Praesent cursus eu
+        tortor vel faucibus. Vestibulum ante ipsum primis in faucibus orci
+        luctus et ultrices posuere cubilia curae; Curabitur eget diam vulputate,
+        efficitur metus id, sollicitudin leo. Aenean viverra enim at tortor
+        suscipit pharetra sed non odio. Phasellus at diam efficitur diam auctor
+        pulvinar. Ut congue porttitor velit, et tempus nisi faucibus placerat.
+        Aenean vestibulum odio ac lectus ultricies, vitae dignissim lorem
+        bibendum. Integer consectetur quam a nisl dictum blandit. Suspendisse
+        potenti. Nulla non elit ultrices diam elementum dapibus. Nunc nibh nisl,
+        euismod quis metus a, placerat pulvinar eros. Suspendisse libero quam,
+        varius at consequat non, pretium mattis elit. Etiam mollis hendrerit
+        nisi, nec lobortis sapien finibus ut. Pellentesque consequat venenatis
+        ex, vitae tempus neque efficitur id. Quisque tincidunt eros libero, id
+        fringilla turpis sollicitudin a. Donec commodo, diam et hendrerit
+        iaculis, eros mi laoreet nisi, ut blandit justo risus ut libero. Nam
+        lacinia posuere felis, quis euismod urna elementum in. Proin sed turpis
+        nisi. Praesent nec nisi nisi. Phasellus ac nisl facilisis, pharetra sem
+        ac, imperdiet sem. Donec rutrum arcu sed leo volutpat bibendum. Mauris
+        tempus accumsan urna quis dictum. Proin pellentesque metus ut lacus
+        finibus semper. Quisque eget pulvinar lorem, sed placerat augue. Aliquam
+        erat volutpat. Nullam odio purus, euismod quis varius et, luctus vitae
+        ante. Praesent porttitor tristique dui sit amet sodales. Suspendisse
+        volutpat risus diam, vel faucibus turpis tincidunt quis. Curabitur
+        semper massa sed ullamcorper mollis.
+      </p>
+
+      <h4><b>Background Stretch</b></h4>
+      <p
+        style="
+          background-image: url('/assets/images/my_image.jpeg');
+          background-size: 100% 100%;
+          border: 2px ridge rgb(0, 0, 0);
+        "
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna
+        tortor, varius at finibus vel, maximus sit amet magna. Ut et metus sed
+        turpis tincidunt laoreet a ut dui. Nunc non laoreet odio, vitae
+        tristique est. Curabitur elementum blandit nunc ut accumsan. Phasellus
+        eu lorem sit amet quam elementum tincidunt ut eu lacus. Nullam mauris
+        ligula, pretium sit amet nisi a, eleifend viverra sem. Vestibulum eu
+        dignissim justo, vitae semper nibh. Maecenas gravida sapien at lacus
+        congue sagittis. Curabitur auctor turpis et placerat fringilla.
+        Suspendisse pellentesque tempus lectus vitae luctus. Pellentesque et
+        accumsan massa, id feugiat erat. Suspendisse potenti. Praesent cursus eu
+        tortor vel faucibus. Vestibulum ante ipsum primis in faucibus orci
+        luctus et ultrices posuere cubilia curae; Curabitur eget diam vulputate,
+        efficitur metus id, sollicitudin leo. Aenean viverra enim at tortor
+        suscipit pharetra sed non odio. Phasellus at diam efficitur diam auctor
+        pulvinar. Ut congue porttitor velit, et tempus nisi faucibus placerat.
+        Aenean vestibulum odio ac lectus ultricies, vitae dignissim lorem
+        bibendum. Integer consectetur quam a nisl dictum blandit. Suspendisse
+        potenti. Nulla non elit ultrices diam elementum dapibus. Nunc nibh nisl,
+        euismod quis metus a, placerat pulvinar eros. Suspendisse libero quam,
+        varius at consequat non, pretium mattis elit. Etiam mollis hendrerit
+        nisi, nec lobortis sapien finibus ut. Pellentesque consequat venenatis
+        ex, vitae tempus neque efficitur id. Quisque tincidunt eros libero, id
+        fringilla turpis sollicitudin a. Donec commodo, diam et hendrerit
+        iaculis, eros mi laoreet nisi, ut blandit justo risus ut libero. Nam
+        lacinia posuere felis, quis euismod urna elementum in. Proin sed turpis
+        nisi. Praesent nec nisi nisi. Phasellus ac nisl facilisis, pharetra sem
+        ac, imperdiet sem. Donec rutrum arcu sed leo volutpat bibendum. Mauris
+        tempus accumsan urna quis dictum. Proin pellentesque metus ut lacus
+        finibus semper. Quisque eget pulvinar lorem, sed placerat augue. Aliquam
+        erat volutpat. Nullam odio purus, euismod quis varius et, luctus vitae
+        ante. Praesent porttitor tristique dui sit amet sodales. Suspendisse
+        volutpat risus diam, vel faucibus turpis tincidunt quis. Curabitur
+        semper massa sed ullamcorper mollis.
+      </p>
+
+      <h4>Background Attachment: local</h4>
+      <p>
+        The background image will scroll with the element's contents.
+        (Background moves with the element's content.)
+      </p>
+      <p
+        style="
+          height: 300px;
+          width: 300px;
+          overflow: auto;
+          background-image: url('/assets/images/my_image.jpeg');
+          background-attachment: local;
+          border: 2px ridge black;
+        "
+      >
+        (Scroll inside this box — background moves with content)
+        <br /><br /><br /><br />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <br /><br />
+        Pellentesque habitant morbi tristique senectus et netus et malesuada
+        fames ac turpis egestas.
+        <br /><br />
+        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
+        ante.
+        <br /><br />
+        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae
+        est.
+        <br /><br />
+        Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper
+        pharetra.
+        <br /><br />
+        estibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet,
+        wisi.
+        <br /><br />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <br /><br />
+        Lorem ipsumdolor sit amet, consectetur adipiscing elit.
+        <br /><br />
+        Lorem ipsumdolor sit amet, consectetur adipiscing elit.
+      </p>
+
+      <h4>Background Attachment: scroll (Default behavior)</h4>
+      <p>
+        The background image will scroll with the page. (Background moves with
+        the element but not with the element's content.)
+      </p>
+      <p
+        style="
+          height: 300px;
+          width: 300px;
+          overflow: auto;
+          background-image: url('/assets/images/my_image.jpeg');
+          background-attachment: scroll;
+          border: 2px ridge black;
+        "
+      >
+        (Scroll inside this box — background moves with content)
+        <br /><br /><br /><br />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <br /><br />
+        Pellentesque habitant morbi tristique senectus et netus et malesuada
+        fames ac turpis egestas.
+        <br /><br />
+        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
+        ante.
+        <br /><br />
+        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae
+        est.
+        <br /><br />
+        Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper
+        pharetra.
+        <br /><br />
+        estibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet,
+        wisi.
+        <br /><br />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <br /><br />
+        Lorem ipsumdolor sit amet, consectetur adipiscing elit.
+        <br /><br />
+        Lorem ipsumdolor sit amet, consectetur adipiscing elit.
+      </p>
+
+      <h4>Background Attachment: fixed</h4>
+      <p>
+        The background image will not scroll with the page. (Background stays
+        fixed relative to the viewport. (may not work fully inside small
+        elements in some browsers))
+      </p>
+      <p
+        style="
+          height: 300px;
+          width: 300px;
+          overflow: auto;
+          background-image: url('/assets/images/my_image.jpeg');
+          background-attachment: fixed;
+          border: 2px ridge black;
+        "
+      >
+        (Scroll inside this box — background moves with content)
+        <br /><br /><br /><br />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <br /><br />
+        Pellentesque habitant morbi tristique senectus et netus et malesuada
+        fames ac turpis egestas.
+        <br /><br />
+        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
+        ante.
+        <br /><br />
+        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae
+        est.
+        <br /><br />
+        Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper
+        pharetra.
+        <br /><br />
+        estibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet,
+        wisi.
+        <br /><br />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <br /><br />
+        Lorem ipsumdolor sit amet, consectetur adipiscing elit.
+        <br /><br />
+        Lorem ipsumdolor sit amet, consectetur adipiscing elit.
+      </p>
+    </section>
+    <hr />
+
     <h3>Common Image Formats</h3>
     <section>
       <ul>
