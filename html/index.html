@@ -649,6 +649,44 @@
     </section>
     <hr />
 
+    <h3>Picture Element</h3>
+    <section>
+      <ul>
+        <li>
+          The Picture element allows you to display different pictures for
+          different devices or screen sizes.
+        </li>
+        <li>
+          It contains one or more source elements, each referring to different
+          images through the srcset attribute. The browser will use the first
+          source element with matching attribute values, and ignore any
+          following source elements.
+        </li>
+        <li>
+          Always specify an img element as the last child of the picture
+          element. It will be used by browsers that do not support the picture
+          element, or if none of the source tags match.
+        </li>
+        <li>Use cases :- Bandwidth, Format Support, etc.</li>
+      </ul>
+      <p>
+        Resize the browser to see different versions of the below picture
+        loading at different viewport sizes.
+      </p>
+      <picture>
+        <source
+          media="(min-width: 650px)"
+          srcset="/assets/images/sample_image1.jpg"
+        />
+        <source
+          media="(min-width: 465px)"
+          srcset="/assets/images/sample_image2.jpg"
+        />
+        <img src="/assets/images/my_image.jpeg" />
+      </picture>
+    </section>
+    <hr />
+
     <!------------------------------------------------------------------------->
     <h2>Links and iFrames</h2>
 
