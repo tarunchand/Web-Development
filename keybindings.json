@@ -1,0 +1,11 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+b",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'html'",
+        "args": {
+            "snippet": "<b>$TM_SELECTED_TEXT</b>$0"
+        }
+    }    
+]  
