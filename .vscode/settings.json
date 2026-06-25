@@ -1,0 +1,20 @@
+{
+    // VS Code
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "editor.detectIndentation": true,
+    "editor.fontSize": 30,
+    "editor.rulers": [80, 120],
+    "editor.formatOnSave": false,
+    "editor.linkedEditing": true,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "workbench.editor.enablePreview": false,
+
+    // HTML CSS Support
+    "css.styleSheets": [
+        "css/**/*.css"
+    ],
+    "css.autoValidation": "Always"
+}
