@@ -4,6 +4,8 @@
 <html lang="en">
   <head>
     <title>Title - This is Title</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/my_image.jpeg" />
   </head>
 
   <body>
@@ -687,6 +689,12 @@
     </section>
     <hr />
 
+    <h3>Favicon</h3>
+    <section>
+      <p>Refer to the title section.</p>
+    </section>
+    <hr />
+
     <!------------------------------------------------------------------------->
     <h2>Links and iFrames</h2>
 
@@ -910,6 +918,219 @@
         "
       >
       </iframe>
+    </section>
+    <hr />
+
+    <!------------------------------------------------------------------------->
+    <h2>Tables</h2>
+
+    <h3>Table</h3>
+    <section>
+      <table border="1" style="border-collapse: collapse">
+        <caption>
+          Table 1
+        </caption>
+        <thead>
+          <!-- Table Row -->
+          <tr>
+            <!-- Table Header -->
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <!-- Table Data -->
+            <td>Jan</td>
+            <td>100</td>
+            <td>200</td>
+          </tr>
+          <tr>
+            <td>Feb</td>
+            <td>150</td>
+            <td>100</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Sum</td>
+            <td>250</td>
+            <td>300</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    <hr />
+
+    <h3>Table - colgroup</h3>
+    <section>
+      <p>
+        The colgroup HTML element defines a group of columns within a table.
+      </p>
+      <table>
+        <caption>
+          English, Reasoning and Maths
+        </caption>
+        <colgroup>
+          <col style="background-color: antiquewhite" />
+          <col span="2" style="background-color: aqua" />
+          <col style="background-color: cadetblue" />
+          <col span="2" style="background-color: tomato" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th></th>
+            <th scope="col">Vocabulary</th>
+            <th scope="col">Grammar</th>
+            <th scope="col">Reasoning</th>
+            <th scope="col">Number System</th>
+            <th scope="col">Algebra</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Chapter</th>
+            <td>Chapter 5</td>
+            <td>Chapter 6</td>
+            <td>Chapter 2</td>
+            <td>Chapter 1</td>
+            <td>Chapter 9</td>
+          </tr>
+          <tr>
+            <th scope="row">Weightage</th>
+            <td>25%</td>
+            <td>10%</td>
+            <td>30%</td>
+            <td>20%</td>
+            <td>15%</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <hr />
+
+    <h3>Table Sizes</h3>
+    <section>
+      <p>
+        The example below sets the width of <b>Column 2</b> to <b>70%</b> and
+        the height of the <b>Row 3</b> to <b>60%</b> for the table below.
+      </p>
+      <table border="1" width="100%" height="400px">
+        <thead>
+          <tr>
+            <th></th>
+            <th scope="col">Column 1</th>
+            <th scope="col" width="70%">Column 2</th>
+            <th scope="col">Column 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Row 1</th>
+            <td>Value 1</td>
+            <td>Value 2</td>
+            <td>Value 3</td>
+          </tr>
+          <tr>
+            <th scope="row">Row 2</th>
+            <td>Value 4</td>
+            <td>Value 5</td>
+            <td>Value 6</td>
+          </tr>
+          <tr height="60%">
+            <th scope="row">Row 3</th>
+            <td>Value 7</td>
+            <td>Value 8</td>
+            <td>Value 9</td>
+          </tr>
+        </tbody>
+      </table>
+      <pre>
+        Using a percentage as the size unit for width means determining how 
+        wide an element will be relative to its parent element. For example, if 
+        a table element is directly nested inside the body element, then 
+        setting the table width to 100% means the table occupies 100% of the 
+        width of the body element.
+      </pre>
+    </section>
+    <hr />
+
+    <h3>Table - Styles</h3>
+    <section>
+      <p>
+        Tables in HTML are best styled using the CSS properties on <b>table</b>,
+        <b>th</b> and <b>td</b> elements.
+        <br />
+        Below example sets a <b>dashed border style</b> and a
+        <b>border spacing</b> of 20px for the <b>table</b> element,
+        <b>rounded border style</b> for the <b>th</b> element and
+        <b>different border styles</b> and <b>cell padding properties</b> for
+        each of the <b>td</b> elements.
+      </p>
+      <table
+        width="100%"
+        style="
+          border: 3px solid red;
+          border-style: dashed;
+          border-spacing: 20px;
+        "
+      >
+        <thead>
+          <tr>
+            <th
+              scope="col"
+              style="border: 5px solid rgb(4, 42, 255); border-radius: 10px"
+            >
+              Column 1
+            </th>
+            <th
+              scope="col"
+              style="border: 5px solid rgb(41, 255, 12); border-radius: 10px"
+            >
+              Column 2
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="border: 5px double black; padding: 20px">
+              Double, Padding 20px
+            </td>
+            <td style="border: 5px dotted magenta; padding: 20px">
+              Dotted, Padding 20px
+            </td>
+          </tr>
+          <tr>
+            <td
+              style="
+                border: 5px inset gray;
+                padding-top: 5px;
+                padding-bottom: 20px;
+                padding-left: 350px;
+                padding-right: 40px;
+              "
+            >
+              <b>Inset</b>, <i><u>Padding</u>: top 5px, bottom <b>20px</b>, left 350px, right 40px</i>
+            </td>
+            <td
+              style="
+                border: 5px outset gray;
+                padding-top: 40px;
+                padding-bottom: 20px;
+                padding-left: 40px;
+                padding-right: 350px;
+              "
+            >
+              Outset, Padding: top 40px, bottom 20px, left 40px, right 350px
+            </td>
+          </tr>
+          <tr>
+            <td style="border: none">No Border</td>
+            <td style="border: 5px groove silver">Groove</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
     <hr />
   </body>
