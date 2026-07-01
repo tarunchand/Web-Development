@@ -9,9 +9,11 @@
 - [ ] Set up Git Credentials in Dev Container
 - [ ] Set up Prettier Extension Configuration
 - [ ] Set up Prettier Extension as a Default Formatter
+- [ ] Configure the Dev Environment in such a way as to keep the possibility of switching to a different IDE with very minimal changes. (For ex:- relying on .prettierrc configuration file instead of relying on vscode settings.json to set prettier configuration)
 - [ ] Configure Live Server to work with Dev Containers
 - [ ] Set up all recommended VSCode extensions and validate their configuration
 - [ ] Set up keybindings script to install the keybindings.template.json
+    - [ ] Use the settings context hack by setting a custom flag in your dev container and use the above custom flag in the when clause for the keybindings in the keybindings.template.json to ensure these shortcuts never conflict with other projects.
 - [ ] Set up extensions and tooling for HTML
 - [ ] Set up devcontainers.json
 - [ ] Linter Integration - [Integrating ESLint with Prettier](https://prettier.io/docs/integrating-with-linters.html)
